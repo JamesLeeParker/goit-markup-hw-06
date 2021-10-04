@@ -73,21 +73,21 @@
                         <h3 class="title">Оставьте свои данные, мы вам перезвоним</h3>
                         <label for="" class="modal-label">
                             Имя                            
-                            <input class="modal-fild" type="text">
+                            <input class="modal-fild" type="text" name="client-name" required>
                             <svg class="modal-icon">
                                 <use href="./images/icons.svg#icon-person-black"></use>
                             </svg>
                         </label>
                         <label for="" class="modal-label">
                             Телефон
-                            <input type="tel" class="modal-fild">
+                            <input type="tel" class="modal-fild" name="client-telephone-number" required>
                             <svg class="modal-icon">
                                 <use href="./images/icons.svg#icon-phone-black"></use>
                             </svg>
                         </label>
                         <label for="" class="modal-label">
                             Почта
-                            <input type="email" class="modal-fild">
+                            <input type="email" class="modal-fild" name="client-email" required>
                             <svg class="modal-icon">
                                 <use href="./images/icons.svg#icon-email-black"></use>
                             </svg>
@@ -97,9 +97,10 @@
                             <textarea name="" id="" cols="30" rows="10" class="modal-fild text-area" placeholder="Введите текст"></textarea>
                         </label>
                         <label class="modal-checkbox" for="agreement">
-                            <input class="" type="checkbox" name="agreement" id="agreement">
-                                Соглашаюсь с рассылкой и принимаю
-                                <a class="agreement-link" href="">Условия договора</a>                                                      
+                            <input class="checkbox-in" type="checkbox" name="agreement" id="agreement" required>
+                            <div class="checkbox-icon"></div>
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="agreement-link" href="">Условия договора</a>                                                      
                         </label>
                         <button type="submit" class="button">
                             Отправить
